@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCodeBinarySearchSolutions.Easy.BinarySearch
+namespace LeetCodeBinarySearchSolutions.Easy.SearchInsertPosition
 {
     public class Solution
     {
-        public int Search(int[] nums, int target)
+        public int SearchInsert(int[] nums, int target)
         {
             int left = 0;
             int right = nums.Length - 1;
@@ -28,7 +28,7 @@ namespace LeetCodeBinarySearchSolutions.Easy.BinarySearch
                     left = mid + 1;
                 }
             }
-            return -1;
+            return left;
         }
     }
 }
